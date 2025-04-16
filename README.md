@@ -12,6 +12,20 @@ This system automates customer outreach and trip planning processes through mult
 - **Smart Follow-ups**: Automated follow-ups with responsive customers (8,000 prioritized leads)
 - **Intent Classification**: AI-powered understanding of customer responses
 
+### Campaign Response Flow
+![Campaign Flow](https://via.placeholder.com/800x400?text=Campaign+Flow+Diagram)
+
+**Important**: Only responses received from the initial campaign will be processed through the agentic system. This targeted approach ensures:
+1. Cost optimization by focusing AI resources only on engaged customers
+2. Higher quality interactions with customers who have shown interest
+3. Efficient use of system resources by filtering out non-responsive contacts
+
+The workflow follows these steps:
+1. Initial campaign sent to all 50,000 contacts
+2. System captures and classifies responses (approximately 8,000 expected)
+3. Only these responsive customers' messages are processed by the AI system
+4. Non-responsive contacts receive no further automated processing
+
 ### Phase 2: Voice Processing Automation
 - **IVR System**: Automated call handling with Tamil language support
 - **Tamil Speech Recognition**: OpenAI Whisper-powered transcription of Tamil audio

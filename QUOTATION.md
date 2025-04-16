@@ -1,11 +1,11 @@
 # Tool & Service Costs: Trip Planning Automation System (Revised)
 
-**Date:** April 16, 2023 (Updated on current date)  
+**Date:** April 16, 2023 (Updated with current market rates)  
 **Scope:** External services and tools for 50,000 message campaign
 
 ## Overview
 
-This document outlines the revised third-party tool and service costs for the Trip Planning Automation System, optimized for a 50,000 message campaign with cost-saving measures implemented.
+This document outlines the revised third-party tool and service costs for the Trip Planning Automation System, optimized for a 50,000 message campaign with cost-saving measures implemented and pricing adjusted to current market rates.
 
 ## Monthly Cost Breakdown
 
@@ -13,30 +13,29 @@ This document outlines the revised third-party tool and service costs for the Tr
 
 | Service | Plan Details | Monthly Cost (INR) |
 |---------|--------------|---------------------|
-| n8n Pro Plan | 10,000 workflow executions, 15 active workflows | ₹4,150 |
-| Google Workspace Business Standard | Includes Sheets, Drive, etc. | ₹1,200 |
-| Email Service (SendGrid) | 50,000 emails/month plan | ₹3,500 |
-| Document Storage (Google Drive) | 2TB Business Storage | ₹1,600 |
-| **Subtotal (Core Platforms)** | | **₹10,450** |
+| n8n Pro Plan | €50 - includes 100 active workflows (not 15) | ₹4,500 |
+| Google Workspace Business Standard | Includes Sheets, Drive, 2TB storage | ₹920 |
+| Email Service (SendGrid) | Essentials plan - 50,000 emails/month | ₹1,700 |
+| ~~Document Storage (Google Drive)~~ | ~~2TB Business Storage~~ | ~~₹1,600~~ (Included in Google Workspace) |
+| **Subtotal (Core Platforms)** | | **₹7,120** |
 
 ### 2. WhatsApp Business API Costs
 
 | Item | Details | Cost (INR) |
 |------|---------|------------|
-| WhatsApp Business API Registration | One-time verification fee | ₹12,500 |
-| Monthly Account Maintenance | Base fee | ₹2,500 |
-| **Subtotal (WhatsApp Base)** | | **₹15,000** (first month) / **₹2,500** (recurring) |
+| WhatsApp Business API Setup | Platform integration fee | ₹8,500 |
+| **Subtotal (WhatsApp Base)** | | **₹8,500** (one-time) |
 
 ### 3. Usage-Based Services (For 50,000 message campaign)
 
 | Service | Calculation | Monthly Cost (INR) |
 |---------|-------------|---------------------|
-| WhatsApp Outbound Messages | 50,000 initial messages × ₹0.80 | ₹40,000 |
-| WhatsApp Document Links | 50,000 link messages × ₹0.80 | ₹40,000 |
-| WhatsApp Follow-up Messages | 8,000 follow-ups × ₹0.80 | ₹6,400 |
-| Email Delivery | 50,000 emails × ₹0.15 | ₹7,500 |
+| WhatsApp Business-Initiated Conversations | 50,000 initial messages × ₹0.75 | ₹37,500 |
+| WhatsApp Document Links | Included in conversation pricing | ₹0 |
+| WhatsApp Follow-up Messages | 8,000 user-initiated conversations × ₹0.30 | ₹2,400 |
+| Email Delivery | 50,000 emails (included in SendGrid plan) | ₹0 |
 | OpenAI API (GPT-4) | Intent classification and response generation (8,000 conversations) | ₹28,000 |
-| **Subtotal (Usage-Based Costs)** | | **₹121,900** |
+| **Subtotal (Usage-Based Costs)** | | **₹67,900** |
 
 ### 4. Optional Services
 
@@ -51,8 +50,8 @@ This document outlines the revised third-party tool and service costs for the Tr
 
 | Time Period | Cost Category | Amount (INR) |
 |-------------|---------------|--------------|
-| **First Month** | Core Platforms + WhatsApp Setup + Usage | **₹147,350** |
-| **Monthly Recurring** | Core Platforms + WhatsApp Maintenance + Usage | **₹134,850** |
+| **First Month** | Core Platforms + WhatsApp Setup + Usage | **₹83,520** |
+| **Monthly Recurring** | Core Platforms + Usage | **₹75,020** |
 | **Optional Services** | Additional tools if needed | **₹4,850** |
 
 ## Phase 2: Voice IVR System with Tamil Transcription
@@ -95,21 +94,23 @@ This document outlines the revised third-party tool and service costs for the Tr
 ## Cost Optimization Implemented
 
 1. **Selective Follow-ups:** Only following up with 8,000 responsive leads instead of the full audience
-2. **Document Links:** Sending links to documents rather than attachments (saving on WhatsApp document delivery fees)
+2. **Document Links:** Sending links to documents rather than attachments (now included in conversation pricing)
 3. **Optimized OpenAI Usage:** Focusing AI interactions only on responsive leads
+4. **Pricing Structure Updates:** Corrected pricing based on current market rates
+5. **Elimination of Duplicate Costs:** Removed redundant storage costs and updated service plans
 
 ## Enhanced Cost Reduction Recommendations
 
-### Immediate Cost Savings (25-35% Potential Reduction)
+### Immediate Cost Savings (35-45% Potential Reduction)
 
 | Area | Current Approach | Recommended Approach | Monthly Savings |
 |------|-----------------|---------------------|----------------|
-| **WhatsApp Messaging** | Standard rate (₹0.80/msg) | Use approved templates (₹0.35/msg) for 80% of messages | ₹36,000 |
+| **WhatsApp Messaging** | Business-initiated rate (₹0.75/msg) | Use approved templates (₹0.35/msg) for 80% of messages | ₹32,000 |
 | **OpenAI API Usage** | GPT-4 for all interactions | GPT-3.5 Turbo for initial classification, GPT-4 only for complex cases | ₹13,000 |
 | **Tamil Transcription** | Process all recordings fully | Implement 2-stage processing: quick filtering then detailed analysis | ₹12,000 |
 | **Cloud Infrastructure** | Dedicated instances | Serverless/container-based deployment for n8n | ₹2,500 |
 | **Campaign Segmentation** | Process all 50,000 contacts at once | Phased rollout with optimization between phases | ₹5,000 |
-| **Total Monthly Savings** | | | **₹68,500** |
+| **Total Monthly Savings** | | | **₹64,500** |
 
 ### Implementation Details
 
@@ -167,11 +168,12 @@ This document outlines the revised third-party tool and service costs for the Tr
 
 ## Notes on WhatsApp Business API Pricing
 
-1. **Registration Process:** Requires business verification through Meta's process
-2. **Message Types:**
-   - Session Messages (24-hour window): Lower costs (₹0.30-₹0.80 depending on country)
-   - Template Messages (outside 24-hour window): Higher costs (₹0.80-₹2.00)
-3. **Volume Discounts:** Available for very high volumes (100,000+ messages)
+1. **Current Pricing Model:** WhatsApp now uses a conversation-based pricing structure
+2. **Conversation Types:**
+   - Business-initiated: ₹0.75-₹0.85 per conversation (India rates)
+   - User-initiated: ₹0.30-₹0.35 per conversation (within 24-hour window)
+   - Template messages: ₹0.35-₹0.45 per message (approved templates)
+3. **Volume Discounts:** Available for very high volumes (100,000+ conversations)
 4. **Country Variations:** Rates vary by recipient country; estimates based on India rates
 
 ## Notes on Tamil Voice Processing
