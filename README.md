@@ -1,20 +1,63 @@
 # Trip Planning Automation System
 
 ## Overview
-This project implements an automated system for a travel planning company to manage email and WhatsApp campaigns for 50,000+ potential customers. The system will handle initial outreach, categorize customer responses, manage follow-ups, and provide an agentic chat experience to answer customer queries.
 
-![System Architecture](docs/images/system_architecture.png)
-
-**[📚 Click here for the User Guide](USER_GUIDE.md)** - A non-technical overview of what we're building and why it matters.
+This system automates customer outreach and trip planning processes through multi-channel communication (WhatsApp, Email, IVR) and intelligent processing of customer responses. The system is designed to handle high-volume campaigns (50,000+ messages) with optimized costs.
 
 ## Key Features
-1. Multi-channel outreach (Email & WhatsApp)
-2. Automated interest categorization (Yes/No/Maybe)
-3. Conditional workflows based on customer response
-4. Centralized data management in Google Sheets
-5. Timeline tracking for each customer
-6. Agentic chat capabilities for customer support
-7. Operator dashboard for monitoring and manual interventions
+
+### Phase 1: Messaging Automation
+- **Multi-Channel Outreach**: WhatsApp and Email campaigns to 50,000 customers
+- **Document Sharing**: Link-based sharing of travel documents
+- **Smart Follow-ups**: Automated follow-ups with responsive customers (8,000 prioritized leads)
+- **Intent Classification**: AI-powered understanding of customer responses
+
+### Phase 2: Voice Processing Automation
+- **IVR System**: Automated call handling with Tamil language support
+- **Tamil Speech Recognition**: OpenAI Whisper-powered transcription of Tamil audio
+- **Context Analysis**: Extraction of customer intents and requirements from voice recordings
+- **Data Integration**: Automated enrichment of customer profiles with voice interaction data
+
+## System Architecture
+
+```
+┌───────────────┐     ┌───────────────┐     ┌────────────────────┐
+│ Communication │     │  Processing   │     │  Data Management   │
+│    Layer      │────▶│    Layer      │────▶│       Layer        │
+└───────────────┘     └───────────────┘     └────────────────────┘
+       │                     │                       │
+       ▼                     ▼                       ▼
+┌───────────────┐     ┌───────────────┐     ┌────────────────────┐
+│  • WhatsApp   │     │  • OpenAI     │     │  • Google Drive    │
+│  • Email      │     │  • n8n        │     │  • Database        │
+│  • IVR/Voice  │     │  • Workflows  │     │  • Analytics       │
+└───────────────┘     └───────────────┘     └────────────────────┘
+```
+
+## Technologies Used
+
+- **n8n**: Workflow automation platform
+- **Google Workspace**: Document management and business operations
+- **WhatsApp Business API**: Customer messaging
+- **SendGrid**: Email delivery
+- **Twilio**: IVR system and call handling
+- **OpenAI APIs**:
+  - GPT-4 for message intent classification
+  - Whisper for Tamil speech recognition
+  - Fine-tuned models for context understanding
+
+## Implementation Timeline
+
+1. **Phase 1** (Messaging Automation): 4-6 weeks
+2. **Phase 2** (Voice Processing): Additional 6-8 weeks
+
+## Scaling Considerations
+
+The system is designed to scale from 10,000 to 50,000+ customers with appropriate infrastructure adjustments.
+
+See `EXECUTION_PLAN.md` for detailed implementation steps.
+
+See `QUOTATION.md` for cost breakdown.
 
 ## Compressed Implementation Timeline (April 16-23)
 
