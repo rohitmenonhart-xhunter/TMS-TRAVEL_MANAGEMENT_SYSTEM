@@ -1,7 +1,6 @@
 # Tool & Service Costs: Trip Planning Automation System
 
 **Date:** April 16, 2023  
-**Valid Until:** May 16, 2023  
 **Scope:** External services and tools for 8,000-10,000 customers
 
 ## Overview
@@ -93,7 +92,6 @@ This document outlines the third-party tool and service costs required to operat
 
 ## Important Considerations
 
-- All prices are exclusive of GST (18%)
 - WhatsApp Business API requires a verified business and may take 2-3 weeks for approval
 - Pricing subject to change by third-party providers
 - Usage-based costs are estimates and will vary based on actual customer engagement
@@ -101,9 +99,3 @@ This document outlines the third-party tool and service costs required to operat
 For maximum cost efficiency, we recommend starting with a pilot of 1,000 customers to establish actual usage patterns before scaling to the full customer base.
 
 ---
-
-For any questions or clarifications regarding this quotation, please contact:
-
-**Project Manager:** [Your Name]  
-**Email:** [your.email@company.com]  
-**Phone:** [Your Phone Number] 
